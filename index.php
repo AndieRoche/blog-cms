@@ -19,8 +19,8 @@
 	}
 	$postTitles = tPostTitlesFromDatabase();
 		
-		foreach($postTitles as $postTitle) {
-			echo "<li><a href='index.php'>" . $postTile . "</a></li>";
+	foreach($postTitles as $postTitle) {
+		echo "<li><a href='post.php?title=" . $postTile . "'>" . $postTile . "</a></li>";
 	}
 ?>	
 	</div>
