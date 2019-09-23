@@ -6,13 +6,7 @@
 </head>
 
 <body>
-	<div id="header">
-		<div id="nav">
-		 <a href="index.php">Home</a> | <a href="post-submission.php">Post Submission</a><br/>
-		
-		</div>
-	
-	</div>
+<?php include 'header.php' ?>
 	<div id="main">
 		<form method="post" action="post.html">
 			<input type="text" name="postauthor" />
