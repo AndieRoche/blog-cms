@@ -11,16 +11,16 @@
 ?>
 	<div id="main">
 <?php 
-	$function getPostTitlesFromDatabase() { 
+	function getPostTitlesFromDatabase() { 
 			//TODO in Module 4
 			// Get Data from database instead
-			$postTitles Array("Blog Post 1", "Blog Post 2", "Blog Post 3");
+			$postTitles = Array("Post 1","Post 2","Post 3");
 			return $postTitles;
 	}
 	$postTitles = getPostTitlesFromDatabase();
 		
 	foreach($postTitles as $postTitle) {
-		echo "<li><a href='post.php?title=" . $postTile . "'>" . $postTile . "</a></li>";
+		echo "<li><a href='post.php?title=" . $postTitle . "'>" . $postTitle . "</a></li>";
 	}
 ?>	
 	</div>
