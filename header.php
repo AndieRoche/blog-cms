@@ -6,9 +6,9 @@
     $married = true; //Boolean type variable
     $childrenNames = Array("Alice","Bob"); //Array type variable
     
-    $fullname = $firsname . " " . $lastname; //Concatenation Operator
+    $fullname = $firstname . " " . $lastname; //Concatenation Operator
     $dogYears = $age/7; //Arithmetic Operator
-    $idAdult = $dogYears > 4; //Comparison Operator
+    $isAdult = $dogYears > 4; //Comparison Operator
     $isSettled = $isAdult and $married; //Integer Type Variable
     
     function getFullName($firstname, $lastname) { //Function Name
@@ -18,9 +18,9 @@
     $fullName = getFullName($firstname, $lastname); //Using Variable
     $fullName = getFullName("Alice", "Doe"); //Using Values
     
-    $function getIsSettled($age, $married) { //Function Name
+    function getIsSettled($age, $married) { //Function Name
         $dogYears = $age/7; 
-        $idAdult = $dogYears > 4; 
+        $isAdult = $dogYears > 4; 
         $isSettled = $isAdult and $married; 
         return $isSettled; //Returned Value
     }
