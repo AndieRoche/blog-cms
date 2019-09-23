@@ -28,6 +28,13 @@
 <div id="header">
 		<div id="nav">
 		 <a href="index.php">Home</a> | <a href="post-submission.php">Post Submission</a><br/>
-		
+        <?php 
+        if ($isSettled) {
+            echo $fullName . " is settled.";
+        } else {
+            echo $fullName . " is not settled.";
+        }
+            
+        ?>
 		</div>
 </div>
