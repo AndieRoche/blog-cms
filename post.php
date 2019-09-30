@@ -9,18 +9,20 @@
 <?php 
 	include 'header.php';
 
-	function getPostDetailsFromDatabase() { 
-			//TODO in Module 4
-			// Get Data from database instead
-			$postDetails = Array('title' => 'Post 1',
-								'content' => 'My First Blog',
-								'date' => '01/01/2019',
-								'author' => 'Andie R',
-								'content' => 'This is sample content.');
-			return $postDetails;
+	function getPostDetailsFromDatabase() {
+		// Get the post title
+		$postTitle = rawurldecode($_GET["title"]);
+	
+		// Get the post that matches the postTitle
+		include_once 'db_connect.php';
+		$sql = "SELECT * FROM blog_posts WHERE title='" . $postTitle . "'";
+		$result = mysqli_query($conn, $sql);
+	
+		// Get the first row from the result as an associative array
+		$postDetails = mysqli_fetch_assoc($result);
+		return $postDetails;
 	}
 	$postDetails = getPostDetailsFromDatabase();
-		
 
 ?>
 	<div id="main">
