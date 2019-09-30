@@ -9,10 +9,15 @@
 <?php include 'header.php'; ?>
 	<div id="main">
 		<form method="post" action="submit-post.php">
-			<input type="text" name="title" />	
-			<input type="text" name="author" />
-			<input type="date" name="date" />
-			<textarea name="content"></textarea>
+		<label for="title">Title</label><br />
+		<input type="text" name="title" />	<br /><br />
+		<label for="author">Author</label><br />
+		<input type="text" name="author" />	<br /><br />
+		<label for="date">Date (YYY/MM/DD)</label><br />
+		<input type="date" name="date" />	<br /><br />
+		<label for="content">Post</label><br />
+		<textarea name="content"></textarea><br /><br />
+		<input type="submit" value="Submit">
 		</form>
 	
 	</div>
