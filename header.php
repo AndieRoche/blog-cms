@@ -1,6 +1,5 @@
 <?php   
     ini_set('display_errors', 1); //show errors for debugging
-    include_once 'db_connect.php';
 
 ?>
 <div id="header">
