@@ -6,12 +6,13 @@
 </head>
 
 <body>
-<?php include 'header.php' ?>
+<?php include 'header.php'; ?>
 	<div id="main">
-		<form method="post" action="post.html">
-			<input type="text" name="postauthor" />
-			<input type="date" name="postdate" />
-			<textarea name="postcontent"></textarea>
+		<form method="post" action="submit-post.php">
+			<input type="text" name="title" />	
+			<input type="text" name="author" />
+			<input type="date" name="date" />
+			<textarea name="content"></textarea>
 		</form>
 	
 	</div>
