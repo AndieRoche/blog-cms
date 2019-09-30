@@ -16,6 +16,7 @@
 		$postTitle = rawurldecode($_GET["title"]);
 	
 		// Get the post that matches the postTitle
+		include_once 'db_connect.php';
 		$sql = "SELECT * FROM blog_posts WHERE title='" . $postTitle . "'";
 		$result = mysqli_query($conn, $sql);
 	
