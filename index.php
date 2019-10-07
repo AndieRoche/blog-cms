@@ -1,12 +1,3 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Hello World</title>
-<script src="JS/blog.js"></script>
-</head>
-
-<body>
 <?php 
 	include 'header.php';
 ?>
