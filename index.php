@@ -3,9 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Hello World</title>
-<script>
-    alert("Hello World");
-</script>
+<script src="hello.js"></script>
 </head>
 
 <body>
