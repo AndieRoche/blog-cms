@@ -2,7 +2,7 @@
 	include 'header.php';
 ?>
 	<div id="main">
-		<div id="sayHi">
+		<div class="sayHi">
 			<button onclick="revealMessage()">Click Me!</button>
 		</div>
 		

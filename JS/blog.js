@@ -1,5 +1,8 @@
-function revealMessage() {
-    document.getElementById("sayHi").style.display = "none";
-    alert("Hi There!");
-}
+$(document).ready(function(){
+    $("button").click(function(){
+      alert("Hi There!");
+      $(".sayHi").hide();
+    });
+    
+});
 
