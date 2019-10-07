@@ -23,13 +23,21 @@
 	}
 
 	$postTitles = getPostTitlesFromDatabase();
-		
-	foreach($postTitles as $postTitle) {
-		echo "<li><a href='post.php?title=" . $postTitle . "'>" . $postTitle . "</a></li>";
-	}
+?>
+<div id="sortable-blog-list">
+	<ul class="list">
+	<input class="search" placeholder="Search" />
+	<button class="sort" data-sort="title">Sort</button>
+		<?php	
+			foreach($postTitles as $postTitle) {
+				echo "<li><a href='post.php?title=" . $postTitle . "' class='title'>" . $postTitle . "</a></li>";
+			}
+		?>
+	</ul>
+</div>
 
 	
-?>	
+	
 	</div>
 	<div id="footer">
 	
