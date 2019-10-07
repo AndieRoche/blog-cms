@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Hello World</title>
+<script>
+    alert("Hello World");
+</script>
 </head>
 
 <body>
