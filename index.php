@@ -1,10 +1,8 @@
 <?php 
 	include 'header.php';
 ?>
-	<div id="main">
-		<div class="sayHi">
-			<button onclick="revealMessage()">Click Me!</button>
-		</div>
+
+<div id="editor"></div>
 		
 <?php 
 
@@ -22,23 +20,29 @@
 		return $postTitles;
 	}
 
-	$postTitles = getPostTitlesFromDatabase();
+	
 ?>
-<div id="sortable-blog-list">
-	<ul class="list">
-	<input class="search" placeholder="Search" />
-	<button class="sort" data-sort="title">Sort</button>
+
+  
+
+<div id="sortable-blog-list">	
+<input class="search" placeholder="Search" />
+  <button class="sort" data-sort="titlePost">Sort by title</button>
+
+
+    <ul class="list">
 		<?php	
+		$postTitles = getPostTitlesFromDatabase();
 			foreach($postTitles as $postTitle) {
-				echo "<li><a href='post.php?title=" . $postTitle . "' class='title'>" . $postTitle . "</a></li>";
+				echo "<li><a href='post.php?title=" . $postTitle . "' class='titlePost'>" . $postTitle . "</a></li>";
 			}
 		?>
 	</ul>
 </div>
 
+
+
 	
-	
-	</div>
 	<div id="footer">
 	
 	</div>
