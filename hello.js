@@ -11,6 +11,8 @@ function getFullName(firstName, lastName) {     // Function name
 }
 var fullName = getFullName(firstName, lastName);   // Using variables
 var fullName = getFullName("Alice", "Doe");        // Using values
+//document.write(fullName);
+//console.log(fullName);
 
 function getIsSettled(age, married) {     // Function name
     var dogYears = age/7;                             // Arithmetic Operator
@@ -20,3 +22,9 @@ function getIsSettled(age, married) {     // Function name
 }
 var isSettled = getIsSettled(age, married);   // Using variables
 var isSettled = getIsSettled(5, false);        // Using values
+
+if (isSettled) {
+    document.write(fullName + " is settled.");
+} else {
+    document.write(fullName + " is not settled.");
+}
