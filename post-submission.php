@@ -1,11 +1,3 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Post</title>
-</head>
-
-<body>
 <?php include 'header.php'; ?>
 	<div id="main">
 		<form method="post" action="submit-post.php">
