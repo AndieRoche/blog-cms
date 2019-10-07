@@ -21,7 +21,7 @@ function getIsSettled(age, married) {     // Function name
     return  isSettled;         // Returned value
 }
 var isSettled = getIsSettled(age, married);   // Using variables
-var isSettled = getIsSettled(5, false);        // Using values
+var isSettled = getIsSettled(20, false);        // Using values
 
 if (isSettled) {
     document.write(fullName + " is settled.");
