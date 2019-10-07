@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Hello World</title>
-<script src="hello.js"></script>
+<script src="JS/blog.js"></script>
 </head>
 
 <body>
@@ -11,6 +11,10 @@
 	include 'header.php';
 ?>
 	<div id="main">
+		<div id="sayHi">
+			<button onclick="revealMessage()">Click Me!</button>
+		</div>
+		
 <?php 
 
 	function getPostTitlesFromDatabase() {
