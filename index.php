@@ -2,8 +2,6 @@
 	include 'header.php';
 ?>
 
-<div id="editor"></div>
-		
 <?php 
 
 	function getPostTitlesFromDatabase() {
@@ -25,26 +23,33 @@
 
   
 
-<div id="sortable-blog-list">	
-<input class="search" placeholder="Search" />
-  <button class="sort" data-sort="titlePost">Sort by title</button>
+ <div id="list-container">
+    <input class="search" placeholder="Search">
+    <button class="sort" data-sort="name">
+      Sort by name
+    </button>
+    <ul class="buisList">
 
-
-    <ul class="list">
 		<?php	
 		$postTitles = getPostTitlesFromDatabase();
 			foreach($postTitles as $postTitle) {
-				echo "<li><a href='post.php?title=" . $postTitle . "' class='titlePost'>" . $postTitle . "</a></li>";
+				echo "<li><a href='post.php?title=" . $postTitle . "' class='listItem'>" . $postTitle . "</a></li>";
 			}
 		?>
-	</ul>
+	 </ul>
+  </div>
+
+ 
+<div id="editor">
+.a { background: #000; .b {
+    color: #f00;
+  }  
+}
 </div>
 
-
+    
 
 	
-	<div id="footer">
-	
-	</div>
+<?php include 'footer.php'; ?>
 </body>
 </html>
